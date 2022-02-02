@@ -32,7 +32,7 @@ export default function CastView() {
           {cast.map(actor => (
             <li key={actor.id}>
               <img
-                src={`http://image.tmdb.org/t/p/w500${actor.profile_path}`}
+                src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
                 onError={e => {
                   e.target.onerror = null;
                   e.target.src = noImage;

@@ -49,7 +49,7 @@ export default function MovieDetailsView() {
         <div>
           <section>
             <img
-              src={`http://image.tmdb.org/t/p/w300${movie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
               onError={e => {
                 e.target.onerror = null;
                 e.target.src = noImage;
