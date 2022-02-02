@@ -1,0 +1,75 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  /* width: 150px; */
+}
+
+h1,
+h4 {
+  margin: 0;
+  padding: 0 16px;
+}
+
+section {
+  display: flex;
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+
+  height: 30px;
+  width: 120px;
+
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  border: none;
+  color: black;
+  background-color: #eeeeee4b;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  color: blue;
+}
+
+.active {
+  composes: link;
+  color: tomato;
+  cursor: default;
+}
+
+.description {
+  margin-left: 16px;
+  width: 600px;
+}
+
+.title {
+  margin-top: 16px;
+  padding: 0;
+}
+
+.genre {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.extraInfo {
+  margin-top: 16px;
+  padding: 0 16px;
+}
