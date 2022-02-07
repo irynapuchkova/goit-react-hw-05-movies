@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import { fetchMovieDetails } from '../../API/fetchMovieInformation';
-import noImage from '../../../src/default_profImg_2.png';
+import noImage from '../../../src/images/default_profImg_2.png';
 
 import s from './MovieDitailsView.module.css';
 
@@ -56,7 +56,7 @@ export default function MovieDetailsView() {
               }}
               alt={movie.title}
               loading="lazy"
-            ></img>
+            />
             <div className={s.description}>
               <h1 className={s.title}>
                 {movie.title}

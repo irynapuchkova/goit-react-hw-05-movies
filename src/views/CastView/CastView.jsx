@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { fetchMovieCast } from '../../API/fetchMovieInformation';
-import noImage from '../../../src/default_profImg_2.png';
+import noImage from '../../../src/images/default_profImg_2.png';
 
 export default function CastView() {
   const { movieId } = useParams();
@@ -40,7 +40,7 @@ export default function CastView() {
                 alt={actor.name}
                 height={213}
                 loading="lazy"
-              ></img>
+              />
               {actor.name}
             </li>
           ))}

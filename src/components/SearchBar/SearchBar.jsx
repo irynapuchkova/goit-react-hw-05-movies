@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import s from './SeachBar.module.css';
 
 export default function SearchBar({ onSubmit }) {
+  const [state, setState] = useState('');
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit(e.target.elements.inputValue.value);
+    onSubmit(state);
+    setState('');
   };
 
   return (
@@ -13,10 +16,12 @@ export default function SearchBar({ onSubmit }) {
         className={s.input}
         name="inputValue"
         type="text"
+        value={state}
+        onChange={e => setState(e.target.value)}
         placeholder="Search movie"
         autoFocus
         autoComplete="off"
-      ></input>
+      />
       <button className={s.button} type="submit">
         Find
       </button>
